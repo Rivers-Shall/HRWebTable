@@ -13,6 +13,9 @@
 		7308F69F23B05A5100275992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7308F69D23B05A5100275992 /* Main.storyboard */; };
 		7308F6A123B05A5300275992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7308F6A023B05A5300275992 /* Assets.xcassets */; };
 		7308F6A423B05A5300275992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7308F6A223B05A5300275992 /* LaunchScreen.storyboard */; };
+		7308F6AC23B05B9200275992 /* HRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7308F6AB23B05B9200275992 /* HRTableViewController.swift */; };
+		7308F6AE23B05BBB00275992 /* HRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7308F6AD23B05BBB00275992 /* HRTableViewCell.swift */; };
+		7308F6B023B05E4800275992 /* NewsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7308F6AF23B05E4800275992 /* NewsRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7308F6A023B05A5300275992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7308F6A323B05A5300275992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7308F6A523B05A5300275992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7308F6AB23B05B9200275992 /* HRTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTableViewController.swift; sourceTree = "<group>"; };
+		7308F6AD23B05BBB00275992 /* HRTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTableViewCell.swift; sourceTree = "<group>"; };
+		7308F6AF23B05E4800275992 /* NewsRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				7308F6A023B05A5300275992 /* Assets.xcassets */,
 				7308F6A223B05A5300275992 /* LaunchScreen.storyboard */,
 				7308F6A523B05A5300275992 /* Info.plist */,
+				7308F6AB23B05B9200275992 /* HRTableViewController.swift */,
+				7308F6AD23B05BBB00275992 /* HRTableViewCell.swift */,
+				7308F6AF23B05E4800275992 /* NewsRecord.swift */,
 			);
 			path = HRWebTable;
 			sourceTree = "<group>";
@@ -139,8 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7308F69C23B05A5100275992 /* ViewController.swift in Sources */,
+				7308F6B023B05E4800275992 /* NewsRecord.swift in Sources */,
+				7308F6AE23B05BBB00275992 /* HRTableViewCell.swift in Sources */,
 				7308F69823B05A5100275992 /* AppDelegate.swift in Sources */,
 				7308F69A23B05A5100275992 /* SceneDelegate.swift in Sources */,
+				7308F6AC23B05B9200275992 /* HRTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
