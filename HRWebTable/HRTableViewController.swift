@@ -120,15 +120,20 @@ class HRTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell", for: indexPath)
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "RightDetailCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HRIdentifier", for: indexPath) as! HRTableViewCell
 
         // Configure the cell...
         let news = model.getNews(at: indexPath)
-        cell.textLabel?.text = news.title
-        cell.detailTextLabel?.text = news.dateStr
+        cell.titleLabel.adjustsFontSizeToFitWidth = true
+        cell.detailLabel.adjustsFontSizeToFitWidth = true
+        cell.titleLabel.text = news.title
+        cell.detailLabel.text = news.dateStr
         cell.accessoryType = .disclosureIndicator
         if news.nViews > 1000 {
-            cell.imageView?.image = UIImage(named: "fire")
+            cell.photoImageView.image = UIImage(named: "fire")
+        } else {
+            cell.photoImageView.isHidden = true
         }
         return cell
     }
@@ -146,6 +151,10 @@ class HRTableViewController: UITableViewController {
         default:
             fatalError()
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
     }
 
     /*

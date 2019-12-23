@@ -12,7 +12,7 @@ class HRTableViewCell: UITableViewCell {
 
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var dateTable: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
