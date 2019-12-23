@@ -131,6 +131,7 @@ class HRTableViewController: UITableViewController {
         cell.detailLabel.text = news.dateStr
         cell.accessoryType = .disclosureIndicator
         if news.nViews > 1000 {
+            cell.photoImageView.isHidden = false
             cell.photoImageView.image = UIImage(named: "fire")
         } else {
             cell.photoImageView.isHidden = true
